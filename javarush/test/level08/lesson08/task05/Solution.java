@@ -39,14 +39,15 @@ public class Solution
             HashMap<String, String> copy = new HashMap<String, String>(map);
             for (Map.Entry<String, String> pairp: copy.entrySet())
             {
-                if (pairp.getValue().equals(value))
+                String value2 = pairp.getValue();
+                if (value2.equals(value))
                     map.remove(pairp.getKey());
             }
         }
 
     }
 
-    public static void removeItemFromMapByValue(HashMap<String, String> map, String value)
+    /*public static void removeItemFromMapByValue(HashMap<String, String> map, String value)
     {
         HashMap<String, String> copy = new HashMap<String, String>(map);
         for (Map.Entry<String, String> pair: copy.entrySet())
@@ -54,7 +55,7 @@ public class Solution
             if (pair.getValue().equals(value))
                 map.remove(pair.getKey());
         }
-    }
+    }*/
 
     public static void main(String[] args)
     {
