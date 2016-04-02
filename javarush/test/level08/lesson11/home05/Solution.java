@@ -22,8 +22,24 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
+        String[] stroka = new String[s.length()];
+        for (int i = 0; i < s.length(); i++)
+        {
+            stroka[i] = s.substring(i,i+1);
+        }
+        for (int k = 0; k < stroka.length; k++)
+        {
+            if (stroka[k].equals(" "))
+            {
+                stroka[k+1] = stroka[k+1].toUpperCase();
+            }
+        }
 
-        //напишите тут ваш код
+        for (int j = 0; j < stroka.length; j++)
+        {
+            System.out.print(stroka[j]);
+        }
+
     }
 
 

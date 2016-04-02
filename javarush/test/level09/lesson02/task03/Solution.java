@@ -14,29 +14,35 @@ public class Solution
     public static int method1()
     {
         method2();
-        return  /*add your code here*/ 0;
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        return stackTraceElements[2].getLineNumber();
     }
 
     public static int method2()
     {
         method3();
-        return  /*add your code here*/ 0;
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        return stackTraceElements[2].getLineNumber();
     }
 
     public static int method3()
     {
         method4();
-        return  /*add your code here*/ 0;
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        return stackTraceElements[2].getLineNumber();
     }
 
     public static int method4()
     {
         method5();
-        return  /*add your code here*/ 0;
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        return stackTraceElements[2].getLineNumber();
+
     }
 
     public static int method5()
     {
-        return  /*add your code here*/ 0;
+        StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace();
+        return stackTraceElements[2].getLineNumber();
     }
 }
